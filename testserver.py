@@ -16,7 +16,7 @@ text3 = html.escape(param3)
 text4 = html.escape(param4)
 
 
-path_to_model = r'C:/bauman/git_bauman/ebw_model'
+path_to_model = r'ebw_model'
 
 human_input = pd.DataFrame({'IW': [47],
                             'IF': [134],
@@ -24,7 +24,7 @@ human_input = pd.DataFrame({'IW': [47],
                             'FP': [110]})
 
 
-minmax = pd.read_csv(path_to_model + r'/minmax.csv')
+minmax = pd.read_csv(path_to_model + r'minmax.csv')
 
 human_input['IW'] = (human_input['IW'] - minmax.minIW) / (minmax.maxIW - minmax.minIW)
 human_input['IF'] = (human_input['IF'] - minmax.minIF) / (minmax.maxIF - minmax.minIF)
