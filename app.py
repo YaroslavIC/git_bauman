@@ -59,7 +59,7 @@ Width = mypredcit[:,1]*(minmax.maxWidth-minmax.minWidth)+minmax.minWidth
 predict = pd.DataFrame({'Depth': Depth, 
                         'Width': Width})
 
-print("F(IW,IF,Vw,FP) = (Depth, Width)")
+print("F(IW,IF,VW,FP) = (Depth, Width)")
 print("F(%3.1f,%3.1f,%3.1f,%3.1f) = (%3.4f,%3.4f)"%(IW_human_input,IF_human_input,VW_human_input,FP_human_input,Depth,Width))
 
 
